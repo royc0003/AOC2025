@@ -2,5 +2,3 @@
 Another attempt lol. Hopefully I complete them before end of the year. This almost feels like yearly resolution that's always incomplete.
 
 https://adventofcode.com
-
-Also, honestly, a way to detox from the use of AI. 
