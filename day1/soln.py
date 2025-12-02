@@ -20,25 +20,39 @@ def split_command(command: str) -> list[str, str]:
     [L, 50]
     '''
     res: list = []
-    return res[command[0], command[1::]]
+    return res[str(command[0]), str(command[1:])]
 
 # Universal Import Functions
 day_1_inputs: list[str] = load_file_from_input_path(DAY_1_INPUT_PATH)
 
 # ranges from 0 - 99
 total_zeroes: int = 0
+res = 0
 for command in day_1_inputs:
     _direction, _amount = split_command(command)
-    opt: str = None
+    opt  = 1
     lower_direction = _direction.lower()
     match lower_direction:
         case 'l':
-            opt = '-'
+            if opt >= 0:
+                opt *= -1
         case 'r':
-            opt = '+'
+            if opt < 0:
+                opt *= -1
         case _:
             print("unknown direction")
             raise(Exception("Unknown direction provided"))
+
+    _amount *= opt  # sets the sign
+    _amount %= 100
+    res += _amount
+    if res == 0:
+        total_zeroes += 1
+print(total_zeroes)
+
+    
+
+
     
     
 
