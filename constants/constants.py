@@ -12,5 +12,6 @@ __all__ = [
     "REPO_ROOT",
     "CONSTANT_PATH",
     "UTILS_PATH",
-    DAY_1_INPUT_PATH
+    DAY_1_INPUT_PATH,
+    DAY_1_TEST_CASE_1
 ]

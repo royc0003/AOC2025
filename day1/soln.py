@@ -8,7 +8,7 @@ if str(PROJECT_ROOT) not in sys.path:
 
 
 # Necessary imports
-from constants import CONSTANT_PATH, UTILS_PATH, DAY_1_INPUT_PATH
+from constants import CONSTANT_PATH, UTILS_PATH, DAY_1_INPUT_PATH, DAY_1_TEST_CASE_1
 from utils import load_file_from_input_path
 
 
@@ -27,7 +27,7 @@ day_1_inputs: list[str] = load_file_from_input_path(DAY_1_INPUT_PATH)
 
 # ranges from 0 - 99
 total_zeroes: int = 0
-res = 0
+res = 50
 for command in day_1_inputs:
     _direction, _amount = split_command(command)
     _amount = int(_amount)
@@ -50,6 +50,7 @@ for command in day_1_inputs:
     res %= 100
     if res == 0:
         total_zeroes += 1
+print("======= FINAL RESULTS ========")
 print(total_zeroes)
 
     
