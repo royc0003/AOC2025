@@ -1,0 +1,11 @@
+# Ignore Python sources; use Black/Ruff instead
+*.py
+**/__pycache__/
+**/*.pyc
+
+# Ignore puzzle input files
+**/input/**
+
+# Standard directories we never want to reformat
+node_modules
+.git

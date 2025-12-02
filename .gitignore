@@ -1,0 +1,10 @@
+# Node / tooling artifacts
+node_modules/
+
+# Python cache directories
+__pycache__/
+**/__pycache__/
+*.pyc
+
+# macOS
+.DS_Store

@@ -7,5 +7,5 @@ if str(PROJECT_ROOT) not in sys.path:
 
 
 # Necessary imports
-from constants import CONSTANT_PATH, UTILS_PATH, DAY_1_INPUT_PATH, DAY_1_TEST_CASE_1
+from constants import CONSTANT_PATH, UTILS_PATH
 from utils import load_file_from_input_path
