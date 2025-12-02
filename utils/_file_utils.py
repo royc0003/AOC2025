@@ -9,7 +9,17 @@ if str(PROJECT_ROOT) not in sys.path:
 from constants import CONSTANT_PATH, UTILS_PATH
 
 # load file
-def load_file_from_input_path():
-    pass
+def load_file_from_input_path(input_file_path: Path) -> list: 
+    '''
+    Returns a list of input from the input_file_path
+    '''
+    res = []
+    try:
+        with open(input_file_path, 'r') as file:
+            lines = input_file_path.readlines()
+            for line in lines:
+                line = line.strip()
+                res.append(line)
+    except:
+        raise Exception("Input file is not handled correctly")
 
-print('hello')
