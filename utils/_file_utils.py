@@ -14,10 +14,11 @@ def load_file_from_input_path(input_file_path: Path) -> list:
     res = []
     try:
         with open(input_file_path, 'r') as file:
-            lines = input_file_path.readlines()
+            lines = file.readlines()
             for line in lines:
                 line = line.strip()
                 res.append(line)
+            return res
     except:
         raise Exception("Input file is not handled correctly")
 

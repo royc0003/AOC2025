@@ -8,9 +8,10 @@ if str(PROJECT_ROOT) not in sys.path:
 
 
 # Necessary imports
-from constants import CONSTANT_PATH, UTILS_PATH
+from constants import CONSTANT_PATH, UTILS_PATH, DAY_1_INPUT_PATH
 from utils import load_file_from_input_path
 
 
 # Universal Import Functions
-print('hello world')
+day_1_inputs = load_file_from_input_path(DAY_1_INPUT_PATH)
+print(day_1_inputs)
