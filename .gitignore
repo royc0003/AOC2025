@@ -1,5 +1,6 @@
 # Node / tooling artifacts
 node_modules/
+.venv/
 
 # Python cache directories
 __pycache__/

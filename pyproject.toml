@@ -1,0 +1,12 @@
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+include = "\\.pyi?$"
+extend-exclude = """
+(
+  ^/\\.venv/
+  |^/node_modules/
+  |^/day\\d+/input/
+  |^/__pycache__/
+)
+"""

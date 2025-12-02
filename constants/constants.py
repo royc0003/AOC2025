@@ -9,7 +9,7 @@ UTILS_PATH = REPO_ROOT / "utils" / "_file_utils.py"
 DAY_1 = "day1"
 INPUT = "input"
 DAY_2 = "day2"
-DAY_1_INPUT_PATH = REPO_ROOT / DAY_1/ INPUT / "input.txt"
+DAY_1_INPUT_PATH = REPO_ROOT / DAY_1 / INPUT / "input.txt"
 DAY_1_TEST_CASE_1 = REPO_ROOT / DAY_1 / INPUT / "testcase1.txt"
 DAY_2_INPUT_PATH = REPO_ROOT / DAY_2 / INPUT / "input.txt"
 DAY_2_TEST_CASE_1 = REPO_ROOT / DAY_2 / INPUT / "testcase2.txt"
@@ -20,5 +20,5 @@ __all__ = [
     DAY_1_INPUT_PATH,
     DAY_1_TEST_CASE_1,
     DAY_2_INPUT_PATH,
-    DAY_2_TEST_CASE_1
+    DAY_2_TEST_CASE_1,
 ]
